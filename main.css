@@ -3,6 +3,10 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
+	position: sticky;
+	top: 0;
+	background-color: #fff;
+	z-index: 1;
 }
 
 body {
@@ -81,6 +85,8 @@ header a {
 .about_sun-image {
 	width: 100px;
 	height: 100px;
+	animation: rotation 10s linear infinite;
+	position: absolute;
 }
 
 .about_info {
@@ -192,4 +198,26 @@ footer {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 15px;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.inner {
+	position: relative;
+	left: 20px;
+}
+
+.outer {
+	position: absolute;
+	left: 20px;
 }
