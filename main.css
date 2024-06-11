@@ -212,12 +212,77 @@ footer {
 	}
 }
 
-.inner {
-	position: relative;
-	left: 20px;
+@media (max-width: 1080px) {
+	.about {
+		padding: 0 20px;
+		padding-top: 115px;
+		padding-bottom: 115px;
+	}
 }
 
-.outer {
-	position: absolute;
-	left: 20px;
+@media (max-width: 1024px) {
+	.about {
+		padding: 0 20px;
+		padding-top: 115px;
+		padding-bottom: 115px;
+	}
+	.about h1 {
+		font-size: 36px;
+		line-height: 40px;
+	}
+	.about_panel-image {
+		width: 280px;
+	}
+
+	.about_sun-image {
+		width: 75px;
+		height: 75px;
+	}
+}
+
+@media (max-width: 640px) {
+	.about {
+		padding: 0 10px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		flex-direction: column-reverse;
+		align-items: center;
+		width: 100%;
+	}
+	.form {
+		padding-top: 0px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 580px) {
+	.form_group {
+		width: 95%;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	.form input {
+		margin-right: 15px;
+	}
+
+	.form select {
+		margin-right: 15px;
+	}
+	button {
+		margin-left: 15px;
+		max-width: 95%;
+	}
+	.form_submit {
+		width: 95%;
+		align-items: center;
+	}
+
+	.footer_container {
+		flex-direction: column;
+		display: flex;
+	}
+
+	.header_logo {
+		height: 30px;
+	}
 }
